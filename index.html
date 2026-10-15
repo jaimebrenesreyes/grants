@@ -124,6 +124,8 @@ section{padding-block:64px}
 .send:focus-visible{outline:3px solid var(--on-teal); outline-offset:3px}
 .send[disabled]{opacity:.6; cursor:wait}
 .status{font-size:14px; color:var(--on-teal); min-height:1.4em; margin:0}
+.direct{font-size:14px; color:var(--on-teal-muted); margin:0}
+.direct a{color:var(--on-teal)}
 footer{padding-block:28px; font-size:14px; color:var(--muted)}
 footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
 
@@ -172,9 +174,9 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
     <div class="hero" id="top">
       <p class="eyebrow">London, Ontario &amp; remote</p>
       <h1>You do the research. <em>I write the grant.</em></h1>
-      <p>Narratives, budgets, letters of support and the deadline itself, handled by one writer who has worked with provincial, federal, industry, nonprofit and international funders.</p>
+      <p>Narratives, budgets, letters of support and the deadline itself, handled by one writer who has worked with provincial, federal, industry and nonprofit funders, and on international partnerships.</p>
       <div class="actions">
-        <a class="btn" href="#contact">Book a free first conversation</a>
+        <a class="btn" href="#contact">Start with a free conversation</a>
         <a class="btn ghost" href="#services">See services</a>
       </div>
     </div>
@@ -182,8 +184,8 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
 </div>
 
 <div class="wrap">
-  <div class="funders" aria-label="Funders I have written for">
-    <small>Funders I’ve written for</small>
+  <div class="funders" aria-label="Funders and partners I have written for">
+    <small>Funders and partners I’ve written for</small>
     <ul>
       <li>Ontario Research Fund</li>
       <li>SSHRC</li>
@@ -250,8 +252,8 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
   <div class="wrap split">
     <div class="about">
       <p class="eyebrow">About</p>
-      <h2 style="font-size:clamp(28px,3.6vw,38px);font-weight:600;line-height:1.15">Years of grant writing at Western University</h2>
-      <p>I was a Research Associate at Western's Financial Wellness Lab (2023–2025). I co-wrote its successful Ontario Research Fund proposal in six weeks, matching researchers with industry partners and collecting their letters of support, and led the writing and coordination of an NSERC Alliance application. Earlier, I co-wrote a SSHRC Partnership Grant for a partnership spanning Canada, El Salvador, the Netherlands and Belgium, carrying it from Letter of Intent to award.</p>
+      <h2 style="font-size:clamp(28px,3.6vw,38px);font-weight:600;line-height:1.15">A decade of grant writing at Western University</h2>
+      <p>I was a Research Associate at Western's Financial Wellness Lab (2023–2025). I co-wrote its successful Ontario Research Fund proposal in six weeks, matching researchers with industry partners and collecting their letters of support, and led the writing and coordination of an NSERC Alliance application. Earlier, I co-wrote an SSHRC Partnership Grant for a partnership spanning Canada, El Salvador, the Netherlands and Belgium, carrying it from Letter of Intent to award.</p>
       <p>Outside the university, I'm Board Member and Secretary of Heart Links Lazos de Corazón, a London nonprofit, and sit on its Fundraising and Engagement Committee. I also teach: this year I led workshops helping graduate students build their own online portfolios.</p>
       <p class="langs">Ph.D. in Hispanic Studies, Western University · English and Spanish · reading knowledge of Italian and Portuguese</p>
       <p><a href="https://jaimebrenesreyes.github.io/">Full portfolio and CV</a></p>
@@ -294,6 +296,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       <input type="hidden" name="_subject" value="New message from jaimebrenesreyes.ca">
       <button class="send" type="submit" id="cf-send">Send message</button>
       <p class="status" id="cf-status" role="status" aria-live="polite"></p>
+      <p class="direct">Prefer email? <a id="direct-mail" data-u="jaimebrenesreyes" data-d="gmail.com">jaimebrenesreyes [at] gmail [dot] com</a></p>
     </form>
   </div>
 </div>
@@ -306,6 +309,10 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
 </footer>
 
 <script>
+(function(){
+  var m=document.getElementById('direct-mail');
+  if(m){ var addr=m.getAttribute('data-u')+'@'+m.getAttribute('data-d'); m.textContent=addr; m.href='mailto:'+addr; }
+})();
 (function(){
   var form=document.getElementById('contactForm'), btn=document.getElementById('cf-send'), status=document.getElementById('cf-status');
   form.addEventListener('submit',function(e){
