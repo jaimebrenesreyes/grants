@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaime Brenes Reyes · Grant Writing &amp; Research Consulting</title>
+<meta name="description" content="Grant writing and research consulting for university researchers, nonprofits and research offices. London, Ontario and remote. English and Spanish.">
+<!-- Draft for feedback: remove the next line at launch so search engines can list the site -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Jaime Brenes Reyes · Grant Writing &amp; Research Consulting">
+<meta property="og:description" content="You do the research. I write the grant.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2312403c'/%3E%3Csvg x='20' y='8' width='60' height='84' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M50 97 L29 54 C24 45 24 35 31 27 L31 6 L69 6 L69 27 C76 35 76 45 71 54 Z' fill='%23f4f1ea'/%3E%3Cpath d='M50 96 L50 52' stroke='%2312403c' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='45' r='8' fill='%2312403c'/%3E%3C/svg%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one calm column (max 1080px); teal band for the thesis and the contact, quiet white sections between. */
+:root{
+  --bg:#fbfcfb; --surface:#eef3f1; --ink:#17201e; --muted:#4a5552; --rule:#d3dcd8;
+  --teal:#12403c; --on-teal:#f1f5f3; --on-teal-muted:#bfd1cb; --ochre:#8a5f10; --ochre-on-teal:#e2c27a; --step:#12403c;
+  --display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --body:'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --mono:'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1715; --surface:#16221f; --ink:#e7eeeb; --muted:#a6b4af; --rule:#2a3a36;
+  --teal:#0b2e2b; --on-teal:#eaf1ee; --on-teal-muted:#a9c2ba; --ochre:#d9b25e; --ochre-on-teal:#e2c27a; --step:#d9b25e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1715; --surface:#16221f; --ink:#e7eeeb; --muted:#a6b4af; --rule:#2a3a36;
+  --teal:#0b2e2b; --on-teal:#eaf1ee; --on-teal-muted:#a9c2ba; --ochre:#d9b25e; --ochre-on-teal:#e2c27a; --step:#d9b25e; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.6}
+.wrap{max-width:1080px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px))}
+a{color:inherit}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--ochre); outline-offset:3px}
+h1,h2,h3{font-family:var(--display); text-wrap:balance; margin:0}
+p{margin:0; text-wrap:pretty}
+.eyebrow{font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--ochre)}
+
+/* Header + hero band */
+.band{background:var(--teal); color:var(--on-teal)}
+.top{display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; padding-block:22px}
+.mark{display:flex; align-items:center; gap:12px; text-decoration:none}
+.mark svg{flex:none}
+.mark b{font-family:var(--display); font-weight:600; font-size:20px; letter-spacing:-.01em}
+.mark span{display:block; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--on-teal-muted)}
+.nav{display:flex; gap:22px; flex-wrap:wrap; font-size:15px}
+.nav a{text-decoration:none; color:var(--on-teal-muted)}
+.nav a:hover{color:var(--on-teal)}
+.hero{padding-block:56px 64px; display:grid; gap:22px; max-width:760px}
+.hero .eyebrow{color:var(--ochre-on-teal)}
+.hero h1{font-size:clamp(40px, 6.4vw, 68px); line-height:1.02; font-weight:600; letter-spacing:-.02em}
+.hero h1 em{font-style:italic; font-weight:500; color:var(--ochre-on-teal)}
+.hero p{font-size:19px; color:var(--on-teal-muted); max-width:58ch}
+.actions{display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-top:6px}
+.btn{display:inline-block; padding:13px 22px; border-radius:4px; font-weight:600; font-size:16px; text-decoration:none; background:var(--ochre-on-teal); color:#14201d}
+.btn.ghost{background:transparent; color:var(--on-teal); border:1px solid var(--on-teal-muted)}
+
+/* Funders strip */
+.funders{display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 18px; padding-block:22px; border-bottom:1px solid var(--rule)}
+.funders small{font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+.funders ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px 0}
+.funders li{font-family:var(--display); font-size:19px; font-weight:600}
+.funders li + li::before{content:"·"; color:var(--ochre); padding-inline:12px; font-weight:400}
+
+section{padding-block:64px}
+.head{display:grid; gap:10px; margin-bottom:32px; max-width:640px}
+.head h2{font-size:clamp(28px, 3.6vw, 38px); font-weight:600; letter-spacing:-.01em; line-height:1.15}
+.head p{color:var(--muted)}
+
+/* Services */
+.services{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule)}
+.svc{background:var(--bg); padding:24px 22px; display:grid; gap:8px; align-content:start}
+.svc h3{font-size:20px; font-weight:600}
+.svc p{font-size:15px; color:var(--muted)}
+.svc .tag{font-size:12px; font-weight:600; color:var(--ochre); letter-spacing:.06em; text-transform:uppercase}
+
+/* Process */
+.steps{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:18px; counter-reset:s}
+.steps li{counter-increment:s; display:grid; gap:8px; align-content:start; border-top:2px solid var(--step); padding-top:14px}
+.steps li::before{content:counter(s, decimal-leading-zero); font-family:var(--mono); font-size:12px; color:var(--muted)}
+.steps b{font-size:16px}
+.steps p{font-size:14px; color:var(--muted)}
+
+/* Audiences */
+.who{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:28px}
+.who .rate{color:var(--ink); font-weight:600}
+.who div{display:grid; gap:8px; align-content:start}
+.who h3{font-size:21px; font-weight:600}
+.who p{font-size:15px; color:var(--muted)}
+.bilingual{margin-top:32px; padding-top:24px; border-top:1px solid var(--rule); display:grid; gap:6px; max-width:720px}
+.bilingual h3{font-size:21px; font-weight:600}
+.bilingual h3 em{font-weight:500; color:var(--ochre)}
+.bilingual p{font-size:15px; color:var(--muted)}
+
+/* Reviewer panel + about */
+.split{display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:start}
+.panel{background:var(--surface); border-radius:6px; padding:28px; display:grid; gap:12px}
+.panel h3{font-size:24px; font-weight:600; line-height:1.2}
+.panel p{font-size:15px; color:var(--muted)}
+.about{display:grid; gap:14px}
+.about p{font-size:16px}
+.about .langs{font-size:14px; color:var(--muted)}
+
+/* Contact band */
+.contact{padding-block:56px}
+.contact .wrap{display:grid; grid-template-columns:1fr 1.2fr; gap:40px; align-items:start}
+.contact h2{font-size:clamp(28px, 3.6vw, 40px); font-weight:600; line-height:1.1}
+.contact p{color:var(--on-teal-muted)}
+.form{display:grid; gap:14px; min-width:0}
+.form .row{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.field{display:grid; gap:6px; min-width:0}
+.field label{font-size:14px; font-weight:600; color:var(--on-teal)}
+.field .opt{font-weight:400; color:var(--on-teal-muted)}
+.field input,.field select,.field textarea{font:inherit; font-size:16px; width:100%; padding:10px 12px; border-radius:4px; border:1px solid var(--on-teal-muted); background:rgba(255,255,255,.07); color:var(--on-teal)}
+.field select option{color:#17201e; background:#fff}
+.field input::placeholder{color:var(--on-teal-muted); opacity:.8}
+.field input:focus-visible,.field select:focus-visible,.field textarea:focus-visible{outline:3px solid var(--ochre-on-teal); outline-offset:1px}
+.field textarea{resize:vertical}
+.hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
+.send{justify-self:start; font:inherit; font-weight:600; font-size:16px; padding:12px 22px; min-height:44px; border:0; border-radius:4px; background:var(--ochre-on-teal); color:#14201d; cursor:pointer}
+.send:focus-visible{outline:3px solid var(--on-teal); outline-offset:3px}
+.send[disabled]{opacity:.6; cursor:wait}
+.status{font-size:14px; color:var(--on-teal); min-height:1.4em; margin:0}
+footer{padding-block:28px; font-size:14px; color:var(--muted)}
+footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+
+@media (max-width:900px){
+  .services{grid-template-columns:repeat(2, minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2, minmax(0,1fr))}
+  .split,.contact .wrap{grid-template-columns:1fr}
+  .who{grid-template-columns:repeat(2, minmax(0,1fr))}
+}
+@media (max-width:640px){ .form .row{grid-template-columns:1fr} }
+@media (max-width:560px){
+  .services,.steps,.who{grid-template-columns:1fr}
+  .nav{gap:16px; font-size:14px}
+  section{padding-block:48px}
+  .funders li{font-size:17px}
+}
+@media (prefers-reduced-motion: no-preference){ .btn,.nav a{transition:color .15s, background-color .15s} }
+.draftbar{background:var(--ochre-on-teal); color:#14201d; font-size:14px; text-align:center; padding:8px 16px}
+.draftbar a{font-weight:600}
+</style>
+</head>
+<body>
+<!-- Draft banner: delete this line at launch -->
+<div class="draftbar">Draft for feedback. Comments welcome through the <a href="#contact">contact form</a>: choose “Feedback on this draft.”</div>
+<div class="band">
+  <div class="wrap">
+    <header class="top">
+      <a class="mark" href="#top" aria-label="Jaime Brenes Reyes, Grant Writing and Research Consulting, home">
+        <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+          <rect width="100" height="100" rx="18" fill="currentColor" opacity=".12"></rect>
+          <svg x="20" y="8" width="60" height="84" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M50 97 L 29 54 C 24 45, 24 35, 31 27 L 31 6 L 69 6 L 69 27 C 76 35, 76 45, 71 54 Z" fill="currentColor"></path>
+            <path d="M50 96 L 50 52" stroke="#12403c" stroke-width="6" stroke-linecap="round"></path>
+            <circle cx="50" cy="45" r="7" fill="#12403c"></circle>
+          </svg>
+        </svg>
+        <div><b>Jaime Brenes Reyes</b><span>Grant Writing &amp; Research Consulting</span></div>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class="hero" id="top">
+      <p class="eyebrow">London, Ontario &amp; remote</p>
+      <h1>You do the research. <em>I write the grant.</em></h1>
+      <p>Narratives, budgets, letters of support and the deadline itself, handled by one writer who has worked with provincial, federal, industry, nonprofit and international funders.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Book a free first conversation</a>
+        <a class="btn ghost" href="#services">See services</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="funders" aria-label="Funders I have written for">
+    <small>Funders I’ve written for</small>
+    <ul>
+      <li>Ontario Research Fund</li>
+      <li>SSHRC</li>
+      <li>NSERC</li>
+      <li>Industry partners</li>
+      <li>Community fundraising</li>
+    </ul>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Services</p>
+      <h2>From the first funder search to the final report</h2>
+    </div>
+    <div class="services">
+      <article class="svc"><span class="tag">Start here</span><h3>Funder scan &amp; fit review</h3><p>Which programs fit your work, and whether you're eligible, answered before anyone writes a word.</p></article>
+      <article class="svc"><span class="tag">Core</span><h3>Full application writing</h3><p>Narrative, budget justification, support letters and compliance, with every co-applicant kept on schedule.</p></article>
+      <article class="svc"><span class="tag">Before you submit</span><h3>Review &amp; reviewer stress test</h3><p>I edit your draft, read it as the panel will, and do the rewrite. Already have reviewer feedback? I'll work from it.</p></article>
+      <article class="svc"><span class="tag">Partners</span><h3>Partnership &amp; support letters</h3><p>MOUs, letters of support and the follow-up that gets partners to sign.</p></article>
+      <article class="svc"><span class="tag">After the award</span><h3>Reporting</h3><p>Interim and final reports that show funders what their money did.</p></article>
+      <article class="svc"><span class="tag">After the award</span><h3>Knowledge mobilization</h3><p>A researcher portfolio site and plain-language summaries, so your findings reach the people who can use them.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">How it works</p>
+      <h2>A full application, step by step</h2>
+    </div>
+    <ol class="steps">
+      <li><b>First conversation</b><p>Free. We talk through your project, timeline and funding goals.</p></li>
+      <li><b>Funder fit</b><p>I read the guidelines closely and confirm the program fits.</p></li>
+      <li><b>Writing &amp; coordination</b><p>You supply the research. I draft, budget and chase the letters.</p></li>
+      <li><b>Reviewer's-eye read</b><p>The draft is tested against how its likely reviewer will read it, then revised.</p></li>
+      <li><b>Submit &amp; report</b><p>Compliance checks before the deadline, and reports once funded.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Who I work with</p>
+      <h2>Researchers, organizations and artists</h2>
+    </div>
+    <div class="who">
+      <div><h3>University researchers</h3><p>Faculty and research teams applying to provincial, federal and partnership programs, who would rather spend the time on the research.</p></div>
+      <div><h3>Nonprofits</h3><p>Community organizations building a funding case. I listen to the community and write in the funder's language.</p></div>
+      <div><h3>Research offices</h3><p>Grant and research-development teams that need another experienced writer when deadlines stack up.</p></div>
+      <div><h3>Artists &amp; grassroots groups</h3><p>Individual artists and small community groups applying for project funding. <strong class="rate">Reduced rates.</strong></p></div>
+    </div>
+    <div class="bilingual">
+      <h3>Working with Latin American partners? <em>También en español.</em></h3>
+      <p>I work in English and Spanish, from partner conversations and letters of support to the application itself, so international collaborations don't lose anything in translation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap split">
+    <div class="about">
+      <p class="eyebrow">About</p>
+      <h2 style="font-size:clamp(28px,3.6vw,38px);font-weight:600;line-height:1.15">Years of grant writing at Western University</h2>
+      <p>I was a Research Associate at Western's Financial Wellness Lab (2023–2025). I co-wrote its successful Ontario Research Fund proposal in six weeks, matching researchers with industry partners and collecting their letters of support, and led the writing and coordination of an NSERC Alliance application. Earlier, I co-wrote a SSHRC Partnership Grant for a partnership spanning Canada, El Salvador, the Netherlands and Belgium, carrying it from Letter of Intent to award.</p>
+      <p>Outside the university, I'm Board Member and Secretary of Heart Links Lazos de Corazón, a London nonprofit, and sit on its Fundraising and Engagement Committee. I also teach: this year I led workshops helping graduate students build their own online portfolios.</p>
+      <p class="langs">Ph.D. in Hispanic Studies, Western University · English and Spanish · reading knowledge of Italian and Portuguese</p>
+      <p><a href="https://jaimebrenesreyes.github.io/">Full portfolio and CV</a></p>
+    </div>
+    <aside class="panel" aria-label="How I handle your material">
+      <h3>Your draft meets its reviewer before the deadline does.</h3>
+      <p>I read every application as its likely reviewer would, then fix what they would flag.</p>
+      <p>Your material stays confidential. Any tool I use is cleared with you first, and checked against the funder's rules.</p>
+      <p>No one can promise funding. I make sure your application answers what the funder asked.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="band contact" id="contact">
+  <div class="wrap">
+    <div style="display:grid;gap:12px">
+      <p class="eyebrow" style="color:var(--ochre-on-teal)">Contact</p>
+      <h2>The first conversation is free.</h2>
+      <p>Tell me about your project and your deadline. I'll tell you honestly whether I can help.</p>
+    </div>
+    <form class="form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <div class="row">
+        <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="cf-type">I'm writing as</label>
+          <select id="cf-type" name="client_type" required>
+            <option value="">Choose one</option>
+            <option>University researcher</option>
+            <option>Nonprofit</option>
+            <option>Research office</option>
+            <option>Artist or grassroots group</option>
+            <option>Feedback on this draft</option>
+          </select></div>
+        <div class="field"><label for="cf-deadline">Deadline <span class="opt">(optional)</span></label><input id="cf-deadline" name="deadline" type="text" placeholder="e.g. SSHRC, February 2027"></div>
+      </div>
+      <div class="field"><label for="cf-msg">Your project or comments</label><textarea id="cf-msg" name="message" rows="4" required></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="cf-gotcha">Leave this empty</label><input id="cf-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="_subject" value="New message from jaimebrenesreyes.ca">
+      <button class="send" type="submit" id="cf-send">Send message</button>
+      <p class="status" id="cf-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Jaime Brenes Reyes · Grant Writing &amp; Research Consulting · London, Ontario</span>
+    <a href="https://jaimebrenesreyes.github.io/">Portfolio</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form=document.getElementById('contactForm'), btn=document.getElementById('cf-send'), status=document.getElementById('cf-status');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){ status.textContent='Please add your name, a valid email, who you are, and a few words about your project.'; form.reportValidity(); return; }
+    btn.disabled=true; status.textContent='Sending…';
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){ form.reset(); status.textContent='Thank you. Your message is on its way.'; }
+        else { status.textContent='Something went wrong and the message wasn\'t sent. Please try again in a moment.'; }
+      })
+      .catch(function(){ status.textContent='The message couldn\'t be sent. Check your connection and try again.'; })
+      .finally(function(){ btn.disabled=false; });
+  });
+})();
+</script>
+</body>
+</html>
