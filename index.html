@@ -77,6 +77,13 @@ section{padding-block:64px}
 .svc p{font-size:15px; color:var(--muted)}
 .svc .tag{font-size:12px; font-weight:600; color:var(--ochre); letter-spacing:.06em; text-transform:uppercase}
 
+/* Testimonials */
+.quotes{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:28px}
+.quotes figure{margin:0; display:grid; gap:14px; align-content:start; border-left:3px solid var(--ochre); padding-left:20px}
+.quotes blockquote{margin:0; font-family:var(--display); font-size:21px; line-height:1.45}
+.quotes figcaption{font-size:14px; color:var(--muted)}
+.quotes figcaption b{color:var(--ink); font-weight:600}
+
 /* Process */
 .steps{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:18px; counter-reset:s}
 .steps li{counter-increment:s; display:grid; gap:8px; align-content:start; border-top:2px solid var(--step); padding-top:14px}
@@ -137,7 +144,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
 }
 @media (max-width:640px){ .form .row{grid-template-columns:1fr} }
 @media (max-width:560px){
-  .services,.steps,.who{grid-template-columns:1fr}
+  .services,.steps,.who,.quotes{grid-template-columns:1fr}
   .nav{gap:16px; font-size:14px}
   section{padding-block:48px}
   .funders li{font-size:17px}
@@ -176,7 +183,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       <h1>You do the research. <em>I write the grant.</em></h1>
       <p>Narratives, budgets, letters of support and the deadline itself, handled by one writer who has worked with provincial, federal, industry and nonprofit funders, and on international partnerships.</p>
       <div class="actions">
-        <a class="btn" href="#contact">Start with a free conversation</a>
+        <a class="btn" href="#contact">Start a conversation</a>
         <a class="btn ghost" href="#services">See services</a>
       </div>
     </div>
@@ -213,6 +220,18 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
   </div>
 </section>
 
+<!-- TESTIMONIALS: paste each quote in the person's exact words, check their name and title, then delete the two comment lines (this one and the "END" one) to show the section.
+<section id="testimonials" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><p class="eyebrow">What colleagues say</p></div>
+    <div class="quotes">
+      <figure><blockquote>“QUOTE FROM MATT”</blockquote><figcaption><b>Matt Davison</b> · TITLE AS HE APPROVES IT</figcaption></figure>
+      <figure><blockquote>“QUOTE FROM AMANDA”</blockquote><figcaption><b>Amanda Grzyb</b> · TITLE AS SHE APPROVES IT</figcaption></figure>
+    </div>
+  </div>
+</section>
+END TESTIMONIALS -->
+
 <section id="process" style="background:var(--surface)">
   <div class="wrap">
     <div class="head">
@@ -220,7 +239,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
       <h2>A full application, step by step</h2>
     </div>
     <ol class="steps">
-      <li><b>First conversation</b><p>Free. We talk through your project, timeline and funding goals.</p></li>
+      <li><b>First conversation</b><p>We talk through your project, timeline and funding goals.</p></li>
       <li><b>Funder fit</b><p>I read the guidelines closely and confirm the program fits.</p></li>
       <li><b>Writing &amp; coordination</b><p>You supply the research. I draft, budget and chase the letters.</p></li>
       <li><b>Reviewer's-eye read</b><p>The draft is tested against how its likely reviewer will read it, then revised.</p></li>
@@ -271,7 +290,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
   <div class="wrap">
     <div style="display:grid;gap:12px">
       <p class="eyebrow" style="color:var(--ochre-on-teal)">Contact</p>
-      <h2>The first conversation is free.</h2>
+      <h2>Let’s talk about your next application.</h2>
       <p>Tell me about your project and your deadline. I'll tell you honestly whether I can help.</p>
     </div>
     <form class="form" id="contactForm" action="https://formspree.io/f/xjygjydj" method="POST" novalidate>
@@ -291,6 +310,7 @@ footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wr
           </select></div>
         <div class="field"><label for="cf-deadline">Deadline <span class="opt">(optional)</span></label><input id="cf-deadline" name="deadline" type="text" placeholder="e.g. SSHRC, February 2027"></div>
       </div>
+      <div class="field"><label for="cf-phone">Phone <span class="opt">(optional)</span></label><input id="cf-phone" name="phone" type="tel" autocomplete="tel" placeholder="Prefer a call? Leave your number and I'll phone you."></div>
       <div class="field"><label for="cf-msg">Your project or comments</label><textarea id="cf-msg" name="message" rows="4" required></textarea></div>
       <div class="hp" aria-hidden="true"><label for="cf-gotcha">Leave this empty</label><input id="cf-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
       <input type="hidden" name="_subject" value="New message from jaimebrenesreyes.ca">
