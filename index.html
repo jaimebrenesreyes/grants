@@ -81,7 +81,8 @@
     "Research partnerships",
     "Letters of support",
     "Knowledge mobilization"
-   ]
+   ],
+   "image": "https://jaimebrenesreyes.ca/headshot.jpg"
   },
   {
    "@type": "ProfessionalService",
@@ -282,6 +283,9 @@ section{padding-block:64px}
 .panel h3{font-size:24px; font-weight:600; line-height:1.2}
 .panel p{font-size:15px; color:var(--muted)}
 .about{display:grid; gap:14px}
+.about-head{display:grid; gap:20px; justify-items:start; margin-bottom:6px}
+.about-title{display:grid; gap:10px; min-width:0}
+.portrait{width:120px; height:120px; border-radius:50%; object-fit:cover; flex:none; border:3px solid var(--surface)}
 .about p{font-size:16px}
 .about .langs{font-size:14px; color:var(--muted)}
 
@@ -428,8 +432,13 @@ footer .wrap{display:flex; justify-content:space-between; align-items:baseline; 
 <section id="about" style="padding-top:0">
   <div class="wrap split">
     <div class="about">
-      <p class="eyebrow">About</p>
-      <h2 style="font-size:clamp(28px,3.6vw,38px);font-weight:600;line-height:1.15">A decade of grant writing and multidisciplinary research at Western University</h2>
+      <div class="about-head">
+        <img class="portrait" src="headshot.jpg" alt="Jaime Brenes Reyes" width="120" height="120">
+        <div class="about-title">
+        <p class="eyebrow">About</p>
+        <h2 style="font-size:clamp(28px,3.6vw,38px);font-weight:600;line-height:1.15">A decade of grant writing and multidisciplinary research at Western University</h2>
+        </div>
+      </div>
       <p>I was a Research Associate at Western's Financial Wellness Lab (2023–2025). I co-wrote its successful Ontario Research Fund proposal, matching researchers with industry partners and collecting their letters of support, and led the writing and coordination of an NSERC Alliance application. Earlier, I worked with the Principal Investigator on an SSHRC Partnership Grant application for a partnership spanning Canada, El Salvador, the Netherlands and Belgium, including the literature review, the theoretical framework and the budget.</p>
       <p>Outside the university, I'm Board Member and Secretary of Heart Links Lazos de Corazón, a London nonprofit, and sit on its Fundraising and Engagement Committee. I also teach: this year I led workshops helping graduate students build their own online portfolios.</p>
       <p class="langs">Ph.D. in Hispanic Studies, Western University · English and Spanish · reading knowledge of Italian and Portuguese</p>
