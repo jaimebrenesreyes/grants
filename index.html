@@ -258,6 +258,7 @@ section{padding-block:64px}
 .quotes blockquote{margin:0; font-family:var(--display); font-size:21px; line-height:1.45}
 .quotes figcaption{font-size:14px; color:var(--muted)}
 .quotes figcaption b{color:var(--ink); font-weight:600}
+.quotes figure:only-child{grid-column:1/-1; max-width:780px}
 
 /* Process */
 .steps{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:18px; counter-reset:s}
@@ -458,17 +459,15 @@ footer .wrap{display:flex; justify-content:space-between; align-items:baseline; 
   </div>
 </section>
 
-<!-- TESTIMONIALS: paste each quote in the person's exact words, check their name and title, then delete the two comment lines (this one and the "END" one) to show the section.
+<!-- Testimonials: to add a quote, copy a <figure> line inside "quotes" and change the words and credit. -->
 <section id="testimonials" style="padding-top:0">
   <div class="wrap">
     <div class="head"><p class="eyebrow">What colleagues say</p></div>
     <div class="quotes">
-      <figure><blockquote>“QUOTE FROM MATT”</blockquote><figcaption><b>Matt Davison</b> · TITLE AS HE APPROVES IT</figcaption></figure>
-      <figure><blockquote>“QUOTE FROM AMANDA”</blockquote><figcaption><b>Amanda Grzyb</b> · TITLE AS SHE APPROVES IT</figcaption></figure>
+      <figure><blockquote>“I supervised Jaime’s doctoral research in Hispanic Studies. He writes with rigour and clarity in both English and Spanish, and he knows how to turn complex research into a case others can follow. Researchers would be in good hands.”</blockquote><figcaption><b>Juan Luis Suárez</b> · Professor, Hispanic Studies, and Director, The CulturePlex Lab, Western University</figcaption></figure>
     </div>
   </div>
 </section>
-END TESTIMONIALS -->
 
 <div class="band contact" id="contact">
   <div class="wrap">
