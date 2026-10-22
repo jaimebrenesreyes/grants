@@ -288,7 +288,10 @@ section{padding-block:64px}
 .me{display:flex; align-items:center; gap:18px; margin-top:18px}
 .me img{width:96px; height:96px; border-radius:50%; object-fit:cover; flex:none; border:3px solid var(--on-teal-muted)}
 .me b{display:block; font-family:var(--display); font-size:20px; font-weight:600; color:var(--on-teal)}
-.me span{font-size:14px; color:var(--on-teal-muted)}
+.me span{display:block; font-size:14px; color:var(--on-teal-muted)}
+.me .li{display:inline-flex; align-items:center; gap:6px; margin-top:8px; font-size:14px; font-weight:600; color:var(--ochre-on-teal); text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:1px}
+.me .li:hover{color:var(--on-teal)}
+.me .li:focus-visible{outline:3px solid var(--ochre-on-teal); outline-offset:3px}
 .about p{font-size:16px}
 .about .langs{font-size:14px; color:var(--muted)}
 
@@ -475,7 +478,7 @@ END TESTIMONIALS -->
       <p>Tell me about your project and your deadline. I'll tell you honestly whether I can help.</p>
       <div class="me">
         <img src="headshot.jpg" alt="Jaime Brenes Reyes" width="96" height="96">
-        <div><b>Jaime Brenes Reyes, Ph.D.</b><span>London, Ontario &amp; remote · English and Spanish</span></div>
+        <div><b>Jaime Brenes Reyes, Ph.D.</b><span>London, Ontario &amp; remote · English and Spanish</span><a class="li" href="https://www.linkedin.com/in/jaime-brenes-reyes" target="_blank" rel="noopener">View my LinkedIn profile <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 3 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div>
       </div>
     </div>
     <form class="form" id="contactForm" action="https://formspree.io/f/xjygjydj" method="POST" novalidate>
@@ -508,7 +511,7 @@ END TESTIMONIALS -->
 <footer>
   <div class="wrap">
     <span>Jaime Brenes Reyes · Grant Writing &amp; Research Consulting · London, Ontario</span>
-    <span class="flinks"><a href="https://jaimebrenesreyes.github.io/">Portfolio</a></span>
+    <span class="flinks"><a href="https://www.linkedin.com/in/jaime-brenes-reyes" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://jaimebrenesreyes.github.io/">Portfolio</a></span>
     <details class="privacy">
       <summary>Privacy</summary>
       <p>When you use the contact form, I receive your name, email, and whatever you choose to share about your project. I use it only to reply to you, and I don't sell or share it. The form is delivered through Formspree, and the site uses Google Analytics to count visits, which sets cookies; both services may store data outside Canada. To have your information deleted, email me at <a class="js-mail" data-u="jaimebrenesreyes" data-d="gmail.com">jaimebrenesreyes [at] gmail [dot] com</a>.</p>
